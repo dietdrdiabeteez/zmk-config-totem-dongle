@@ -166,26 +166,16 @@
 
         MCLICK {
             bindings = <&mkp MB3>;
-            key-positions = <1 3>;
+            key-positions = <22 24>;
         };
 
         RCLICK {
             bindings = <&mkp MB2>;
-            key-positions = <1 2>;
+            key-positions = <23 24>;
         };
 
         LCLICK {
             bindings = <&mkp MB1>;
-            key-positions = <2 3>;
-        };
-
-        alttab {
-            bindings = <&kp LA(TAB)>;
-            key-positions = <23 24>;
-        };
-
-        salttab {
-            bindings = <&kp LA(LS(TAB))>;
             key-positions = <22 23>;
         };
     };
