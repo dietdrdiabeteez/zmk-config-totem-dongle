@@ -76,6 +76,26 @@
             bindings = <&mkp LCLK>;
             key-positions = <2 3>;
         };
+
+        wpre {
+            bindings = <&kp LC(LEFT)>;
+            key-positions = <6 7>;
+        };
+
+        wnext {
+            bindings = <&kp LC(RIGHT)>;
+            key-positions = <7 8>;
+        };
+
+        wpresel {
+            bindings = <&kp LC(LS(LEFT))>;
+            key-positions = <27 28>;
+        };
+
+        wnextsel {
+            bindings = <&kp LC(LS(RIGHT))>;
+            key-positions = <28 29>;
+        };
     };
 
     keymap {
