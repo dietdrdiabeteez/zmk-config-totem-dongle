@@ -168,6 +168,26 @@
             bindings = <&mkp MB3>;
             key-positions = <1 3>;
         };
+
+        RCLICK {
+            bindings = <&mkp MB2>;
+            key-positions = <1 2>;
+        };
+
+        LCLICK {
+            bindings = <&mkp MB1>;
+            key-positions = <2 3>;
+        };
+
+        alttab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <23 24>;
+        };
+
+        salttab {
+            bindings = <&kp LA(LS(TAB))>;
+            key-positions = <22 23>;
+        };
     };
 
     keymap {
@@ -186,10 +206,10 @@
         NAV {
             display-name = "Nav";
             bindings = <
-              &kp PRINTSCREEN  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &mkp RCLK    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp CARET
-              &kp HOME         &kp LEFT     &kp DOWN      &kp RIGHT      &kp END      &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&kp CAPSLOCK  &kp KP_NUMLOCK   &kp INS      &mkp MB1      &mkp MB2       &mkp LCLK    &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH   &kp PLUS
-                                            &kp F12       &kp F2         &trans       &kp N0        &kp SLASH     &kp EQUAL
+              &kp PRINTSCREEN  &kp PAGE_UP  &kp UP_ARROW        &kp PAGE_DOWN  &kp C_VOLUME_UP    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp CARET
+              &kp HOME         &kp LEFT     &kp DOWN            &kp RIGHT      &kp END            &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&kp CAPSLOCK  &kp KP_NUMLOCK   &kp INS      &kp LC(LA(DELETE))  &kp LA(F4)     &kp C_VOL_DN       &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH   &kp ENTER
+                                            &kp F12             &kp F2         &kp SPACE          &kp N0        &kp SLASH     &kp EQUAL
             >;
         };
 
@@ -198,7 +218,7 @@
             bindings = <
            &kp PERCENT    &kp AMPS    &kp EXCLAMATION  &none                 &none             &none            &none                  &none             &none  &none
            &kp AT_SIGN    &kp DOLLAR  &kp LESS_THAN    &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN  &none  &none
-&kp TILDE  &kp BACKSLASH  &none       &none            &kp LEFT_BRACKET      &kp UNDER         &kp UNDER        &kp RIGHT_BRACKET      &none             &none  &kp SLASH  &kp GRAVE
+&kp TILDE  &kp BACKSLASH  &none       &kp PIPE         &kp LEFT_BRACKET      &kp UNDER         &kp UNDER        &kp RIGHT_BRACKET      &kp PIPE          &none  &kp SLASH  &kp GRAVE
                                       &none            &none                 &none             &none            &none                  &none
             >;
         };
