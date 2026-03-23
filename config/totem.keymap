@@ -125,6 +125,20 @@
             bindings = <&kp LS(M) &kp LS(W) &kp SPACE &kp N3 &kp SPACE &kp T &kp O &kp SPACE &kp N4 &kp SPACE &kp T &kp Y &kp P &kp E &kp S &kp COMMA &kp SPACE &kp LS(N) &kp O &kp SPACE &kp LS(B) &kp LS(H)>;
             label = "MMWNO";
         };
+
+        mcw: mobs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RET &kp C &kp W &kp TAB>;
+            label = "MOBS";
+        };
+
+        mobs: mobs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LA(N) &kp F3>;
+            label = "MOBS";
+        };
     };
 
     combos {
@@ -198,7 +212,7 @@
             bindings = <
            &print  &mout  &msam   &mng       &none     &kp F10  &kp F7  &kp F8  &kp F9  &kp F10
            &mbot   &mthi  &msam   &maer      &none     &kp F11  &kp F4  &kp F5  &kp F6  &kp F11
-&clearACC  &none   &none  &mmwno  &none      &none     &kp F12  &kp F1  &kp F2  &kp F3  &kp F12  &none
+&clearACC  &mcw    &none  &mmwno  &none      &none     &kp F12  &kp F1  &kp F2  &kp F3  &kp F12  &none
                           &none   &clearACC  &print    &none    &none   &none
             >;
         };
