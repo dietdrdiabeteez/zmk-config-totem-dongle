@@ -62,6 +62,69 @@
             bindings = <&kp LA(N) &kp O &kp B &kp S &kp TAB &kp LA(A) &kp B &kp A &kp P &kp TAB &kp SPACE &kp ENTER &kp ESCAPE>;
             label = "PRINT";
         };
+
+        mbot: mbot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(B) &kp O &kp T &kp T &kp L &kp E &kp S &kp COLON &kp SPACE &kp LS(N) &kp LS(T) &kp LS(D)>;
+            label = "MBOT";
+        };
+
+        mthi: mthi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(T) &kp H &kp I &kp O &kp COLON &kp SPACE>;
+            label = "MTHI";
+        };
+
+        maer: maer {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp LS(E) &kp LS(R) &kp SPACE &kp LS(P) &kp L &kp A &kp T &kp E &kp S &kp COLON &kp SPACE>;
+            label = "MAER";
+        };
+
+        mana: mana {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp LS(N) &kp LS(A) &kp SPACE &kp LS(P) &kp L &kp A &kp T &kp E &kp S &kp COLON &kp SPACE>;
+            label = "MANA";
+        };
+
+        msam: msam {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp LS(A) &kp LS(M) &kp LS(E) &kp RET>;
+            label = "MSAM";
+        };
+
+        mng: mng {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(N) &kp LS(G) &kp RET>;
+            label = "MNG";
+        };
+
+        mout: mout {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE &kp SPACE &kp LS(O) &kp LS(U) &kp LS(T) &kp RET>;
+            label = "MOUT";
+        };
+
+        mmw: mmw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp LS(W) &kp SPACE &kp N3 &kp SPACE &kp T &kp O &kp SPACE &kp N4 &kp SPACE &kp T &kp Y &kp P &kp E &kp S>;
+            label = "MMW";
+        };
+
+        mmwno: mmwno {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp LS(W) &kp SPACE &kp N3 &kp SPACE &kp T &kp O &kp SPACE &kp N4 &kp SPACE &kp T &kp Y &kp P &kp E &kp S &kp COMMA &kp SPACE &kp LS(N) &kp O &kp SPACE &kp LS(B) &kp LS(H)>;
+            label = "MMWNO";
+        };
     };
 
     combos {
@@ -133,10 +196,10 @@
 
         FUN {
             bindings = <
-           &print  &none  &none  &none  &none    &kp F10  &kp F7  &kp F8  &kp F9  &kp F10
-           &none   &none  &none  &none  &none    &kp F11  &kp F4  &kp F5  &kp F6  &kp F11
-&clearACC  &none   &none  &none  &none  &none    &kp F12  &kp F1  &kp F2  &kp F3  &kp F12  &none
-                          &none  &none  &none    &none    &none   &none
+           &print  &mout  &msam   &mng       &none     &kp F10  &kp F7  &kp F8  &kp F9  &kp F10
+           &mbot   &mthi  &msam   &maer      &none     &kp F11  &kp F4  &kp F5  &kp F6  &kp F11
+&clearACC  &none   &none  &mmwno  &none      &none     &kp F12  &kp F1  &kp F2  &kp F3  &kp F12  &none
+                          &none   &clearACC  &print    &none    &none   &none
             >;
         };
     };
