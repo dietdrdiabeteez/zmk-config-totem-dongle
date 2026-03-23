@@ -136,23 +136,13 @@
         mcw1: mcw1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp RET &kp C &kp W &kp TAB>;
+            bindings = <&kp ENTER &kp RET &kp C &kp W &kp TAB>;
             label = "MCW1";
         };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        RCLICK {
-            bindings = <&mkp MB2>;
-            key-positions = <1 2>;
-        };
-
-        LCLICK {
-            bindings = <&mkp MB2>;
-            key-positions = <2 3>;
-        };
 
         wpre {
             bindings = <&kp LC(LEFT)>;
@@ -196,10 +186,10 @@
         NAV {
             display-name = "Nav";
             bindings = <
-              &kp PRINTSCREEN  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &kp K_VOLUME_UP      &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp CARET
-              &kp HOME         &kp LEFT     &kp DOWN      &kp RIGHT      &kp END              &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
-&kp CAPSLOCK  &kp KP_NUMLOCK   &kp INS      &mkp MB1      &mkp MB2       &kp K_VOLUME_DOWN    &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH   &kp PLUS
-                                            &kp F12       &kp F2         &trans               &kp N0        &kp SLASH     &kp EQUAL
+              &kp PRINTSCREEN  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &mkp RCLK    &kp ASTERISK  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp CARET
+              &kp HOME         &kp LEFT     &kp DOWN      &kp RIGHT      &kp END      &kp MINUS     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp N0
+&kp CAPSLOCK  &kp KP_NUMLOCK   &kp INS      &mkp MB1      &mkp MB2       &mkp LCLK    &kp PLUS      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp HASH   &kp PLUS
+                                            &kp F12       &kp F2         &trans       &kp N0        &kp SLASH     &kp EQUAL
             >;
         };
 
@@ -215,10 +205,10 @@
 
         FUN {
             bindings = <
-           &print  &mout  &msam   &mng       &none     &kp F10  &kp F7  &kp F8  &kp F9  &kp F10
-           &mbot   &mthi  &msam   &maer      &none     &kp F11  &kp F4  &kp F5  &kp F6  &kp F11
-&clearACC  &mobs1  &mcw1  &mmwno  &none      &none     &kp F12  &kp F1  &kp F2  &kp F3  &kp F12  &none
-                          &mobs1  &clearACC  &print    &none    &none   &none
+           &print  &mout  &msam   &mng       &print       &kp F10  &kp F7     &kp F8  &kp F9  &kp F10
+           &mbot   &mthi  &msam   &maer      &clearACC    &kp F11  &kp F4     &kp F5  &kp F6  &kp F11
+&clearACC  &mobs1  &mcw1  &mmwno  &mmw       &mobs1       &kp F12  &kp F1     &kp F2  &kp F3  &kp F12  &none
+                          &mobs1  &clearACC  &print       &mobs1   &clearACC  &print
             >;
         };
     };
