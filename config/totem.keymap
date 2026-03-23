@@ -145,12 +145,12 @@
         compatible = "zmk,combos";
 
         RCLICK {
-            bindings = <&mkp RCLK>;
+            bindings = <&mkp MB2>;
             key-positions = <1 2>;
         };
 
         LCLICK {
-            bindings = <&mkp LCLK>;
+            bindings = <&mkp MB2>;
             key-positions = <2 3>;
         };
 
@@ -175,7 +175,7 @@
         };
 
         MCLICK {
-            bindings = <&mkp MCLK>;
+            bindings = <&mkp MB3>;
             key-positions = <1 3>;
         };
     };
