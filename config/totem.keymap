@@ -226,7 +226,7 @@
         FUN {
             bindings = <
            &print  &mout  &msam      &mng    &print       &kp F10  &kp F7  &kp F8     &kp F9  &kp F10
-           &mbot   &mthi  &msam      &maer   &clearACC    &kp F11  &kp F4  &kp F5     &kp F6  &kp F11
+           &mbot   &mthi  &mana      &maer   &clearACC    &kp F11  &kp F4  &kp F5     &kp F6  &kp F11
 &clearACC  &mobs1  &mcw1  &mmwno     &mmw    &mobs1       &kp F12  &kp F1  &kp F2     &kp F3  &kp F12  &none
                           &clearACC  &print  &mobs1       &mobs1   &print  &clearACC
             >;
