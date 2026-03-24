@@ -117,6 +117,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(M) &kp LS(W) &kp SPACE &kp N3 &kp SPACE &kp T &kp O &kp SPACE &kp N4 &kp SPACE &kp T &kp Y &kp P &kp E &kp S>;
             label = "MMW";
+            tap-ms = <1>;
         };
 
         mmwno: mmwno {
@@ -124,6 +125,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(M) &kp LS(W) &kp SPACE &kp N3 &kp SPACE &kp T &kp O &kp SPACE &kp N4 &kp SPACE &kp T &kp Y &kp P &kp E &kp S &kp COMMA &kp SPACE &kp LS(N) &kp O &kp SPACE &kp LS(B) &kp LS(H)>;
             label = "MMWNO";
+            wait-ms = <1>;
         };
 
         mobs1: mobs1 {
