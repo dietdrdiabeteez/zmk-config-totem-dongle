@@ -145,22 +145,22 @@
         compatible = "zmk,combos";
 
         wpre {
-            bindings = <&kp LC(LEFT)>;
+            bindings = <&kp LC(LS(LEFT))>;
             key-positions = <6 7>;
         };
 
         wnext {
-            bindings = <&kp LC(RIGHT)>;
+            bindings = <&kp LC(LS(RIGHT))>;
             key-positions = <7 8>;
         };
 
         wpresel {
-            bindings = <&kp LC(LS(LEFT))>;
+            bindings = <&kp LC(LEFT)>;
             key-positions = <5 6>;
         };
 
         wnextsel {
-            bindings = <&kp LC(LS(RIGHT))>;
+            bindings = <&kp LC(RIGHT)>;
             key-positions = <8 9>;
         };
 
@@ -181,12 +181,27 @@
 
         qnext {
             bindings = <&kp LC(N)>;
-            key-positions = <28 29>;
+            key-positions = <31 30>;
         };
 
         qpre {
-            bindings = <&kp LA(P)>;
-            key-positions = <28 27>;
+            bindings = <&kp LC(P)>;
+            key-positions = <31 19>;
+        };
+
+        winleft {
+            bindings = <&kp LG(LEFT_ARROW)>;
+            key-positions = <27 28>;
+        };
+
+        winrigh {
+            bindings = <&kp LG(RIGHT)>;
+            key-positions = <29 30>;
+        };
+
+        winhide {
+            bindings = <&kp LG(D)>;
+            key-positions = <28 29>;
         };
     };
 
@@ -225,10 +240,10 @@
 
         FUN {
             bindings = <
-           &print  &mout  &msam      &mng    &print       &kp F10  &kp F7  &kp F8     &kp F9  &kp F10
-           &mbot   &mthi  &mana      &maer   &clearACC    &kp F11  &kp F4  &kp F5     &kp F6  &kp F11
-&clearACC  &mobs1  &mcw1  &mmwno     &mmw    &mobs1       &kp F12  &kp F1  &kp F2     &kp F3  &kp F12  &none
-                          &clearACC  &print  &mobs1       &mobs1   &print  &clearACC
+           &print  &mout  &msam      &mng       &print       &kp F10  &kp F7     &kp F8     &kp F9  &kp F10
+           &mbot   &mthi  &mana      &maer      &clearACC    &kp F11  &kp F4     &kp F5     &kp F6  &kp F11
+&clearACC  &mobs1  &mcw1  &mmwno     &mmw       &print       &kp F12  &kp F1     &kp F2     &kp F3  &kp F12  &none
+                          &clearACC  &clearACC  &mobs1       &mobs1   &clearACC  &clearACC
             >;
         };
     };
