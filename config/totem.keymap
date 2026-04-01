@@ -136,7 +136,7 @@
         mcw1: mcw1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp ENTER &kp RET &kp C &kp W &kp TAB>;
+            bindings = <&kp C &kp W &kp TAB>;
             label = "MCW1";
         };
     };
